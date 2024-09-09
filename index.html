@@ -476,6 +476,22 @@
         </div>
         <!-- Testimonial End -->
 
+        <div class="header-carousel owl-carousel">
+            <div class="container py-5">
+                <section class="customer-logos slider">
+                    <div class="slide"><img src="/img/Logos/Habitat.PNG"></div>
+                    <div class="slide"><img src="/img/Logos/MagicMarkers.png"></div>
+                    <div class="slide"><img src="/img/Logos/Urbanistika.png"></div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+                    <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+                    
+                </section>
+            </div>
+        </div>       
+
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s" style="padding: 0px; height: 400px;">
             <div id="f-footer"></div>
@@ -501,6 +517,7 @@
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
         <script>
             $(function() {
@@ -511,6 +528,29 @@
                 $("#f-team").load("f-team.html");
                 $("#f-footer").load("f-footer.html");
                 $("#f-copyright").load("f-copyright.html");
+            });
+
+            $(document).ready(function(){
+                $('.customer-logos').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }]
+                });
             });
          </script>
 
