@@ -1100,6 +1100,9 @@ h2{
         width: 350px;
         height: 300px;
     }
+    .hmenu{
+        display: none;
+    }
 }
 @media (min-width: 667px) and (min-height: 375px) {
     .iframe {
@@ -1195,5 +1198,14 @@ h2{
     .iframe {
         width: 1900px;
         height: 800px;
+    }
+}
+
+@media (min-width: 1900px){
+    .andrea {
+        width: max-content;
+    }
+    .hfooter{
+        height: 400px;
     }
 }
