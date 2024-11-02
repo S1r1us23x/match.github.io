@@ -26,7 +26,7 @@
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Nuestro equipo</h4>
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Transformación digital</h4>
                 <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                 </ol>    
             </div>
@@ -34,29 +34,40 @@
         <!-- Header End -->
 
         <!-- Team Start -->
-        <div class="container-fluid team py-5 fondo1">
-            <div id="f-team"></div>
+        <div class="container-fluid team py-5 fondo1" style="padding-bottom: 0px;">
+            <div class="row col-md-6 offset-md-3 g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-md-5">
+                    <img src="img/Icons/D3.jpeg" style="width: 100%;" alt="">
+                </div>
+                <div class="col p-4 d-flex flex-column position-static" style="background-color: #dee2e6;">
+                    <h3 style="color: rgba(0,0,0,.55); text-align: left; font-size: 50px;">¡Construyamos juntos el futuro tecnológico del sector inmobiliario en Colombia!</h3>
+                </div>
+                <div>
+                    <p style="text-align: justify; margin: 20px;"> 
+                        Nos especializamos en identificar y proporcionar herramientas tecnológicas innovadoras que permiten a las empresas del sector optimizar sus procesos, ahorrar tiempo y facilitar la transferencia de información y la compatibilidad de lenguajes.
+                    </p>
+                    <p style="text-align: justify; margin: 20px;">
+                        Actualmente, estamos desarrollando un proyecto enfocado en la centralización y administración de la información: la Sede Electrónica Constructor (SEC) y la escrituración inteligente DEKin.
+                    </p>
+                    <p style="text-align: justify; margin: 20px;">
+                        Nuestra plataforma tecnológica propicia el trabajo articulado y colaborativo entre los diversos actores que intervienen en las etapas de los actos notariales de escrituración de proyectos inmobiliarios en Colombia, mediante flujos automatizados y total interoperabilidad con la Plataforma de Gestión Notarial.
+                    </p>
+                    <ul style="text-align: left;">
+                        <li>
+                            <strong>Implementación de plataformas digitales: </strong> Te ayudamos a adoptar herramientas tecnológicas que optimicen tus operaciones.
+                        </li>
+                        <li>
+                            <strong>Integración de sistemas de información: </strong> Aseguramos la compatibilidad y fluidez entre diferentes plataformas y sistemas.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
         <!-- Team End -->
 
-        <div class="header-carousel owl-carousel">
-            <div class="container py-5">
-                <h1 class="text-primary">Nuestros aliados</h1>
-                <section class="customer-logos slider">
-                    <div class="slide"><img src="img/Logos/MagicMarkers.png"></div>
-                    <div class="slide"><img src="img/Logos/Urbanistika.png"></div>
-                    <div class="slide"><img src="img/Logos/Taller765PH.jpg"></div>
-                    <div class="slide"><img src="img/Logos/TRUORA.png"></div>
-                    <div class="slide"><img src="img/Logos/MagicMarkers.png"></div>
-                    <div class="slide"><img src="img/Logos/Urbanistika.png"></div>
-                    <div class="slide"><img src="img/Logos/Taller765PH.jpg"></div>
-                    <div class="slide"><img src="img/Logos/TRUORA.png"></div>
-                </section>
-            </div>
-        </div>   
-
         <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn hfooter" data-wow-delay="0.2s" style="padding: 0px;">
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s" style="padding: 0px; height: 400px;">
             <div id="f-footer"></div>
         </div>
         <!-- Footer End -->
@@ -80,7 +91,6 @@
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
         <script>
             $(function() {
@@ -91,29 +101,6 @@
                 $("#f-team").load("f-team.html");
                 $("#f-footer").load("f-footer.html");
                 $("#f-copyright").load("f-copyright.html");
-            });
-
-            $(document).ready(function(){
-                $('.customer-logos').slick({
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 1500,
-                    arrows: false,
-                    dots: false,
-                    pauseOnHover: false,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    }, {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }]
-                });
             });
          </script>
 
