@@ -85,16 +85,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
         <script>
-            $(function() {
-                $("#f-head").load("f-head.html");
-                $("#f-spinner").load("f-spinner.html");
-                $("#f-navbar").load("f-navbar.html");
-                $("#f-topbar").load("f-topbar.html");
-                $("#f-team").load("f-team.html");
-                $("#f-footer").load("f-footer.html");
-                $("#f-copyright").load("f-copyright.html");
-            });
-
             $(document).ready(function(){
                 $('.customer-logos').slick({
                     slidesToShow: 6,
@@ -115,6 +105,16 @@
                             slidesToShow: 3
                         }
                     }]
+                });
+
+                $(function() {
+                    $("#f-head").load("f-head.html");
+                    $("#f-spinner").load("f-spinner.html");
+                    $("#f-navbar").load("f-navbar.html");
+                    $("#f-topbar").load("f-topbar.html");
+                    $("#f-team").load("f-team.html");
+                    $("#f-footer").load("f-footer.html");
+                    $("#f-copyright").load("f-copyright.html");
                 });
             });
          </script>
