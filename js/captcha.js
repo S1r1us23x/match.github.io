@@ -55,19 +55,19 @@ submitButton.addEventListener('click', function() {
         output.classList.add("correctCaptcha");
         output.innerHTML = "!Codigo correcto!";
 
-        let name = document.getElementById('inputName').value;
-        let email = document.getElementById('inputEmail').value;
-        let subject = document.getElementById('inputSubject').value;
-        let message = document.getElementById('inputMessage').value;
+        let inputName = document.getElementById('inputName').value;
+        let inputEmail = document.getElementById('inputEmail').value;
+        let inputSubject = document.getElementById('inputSubject').value;
+        let inputMessage = document.getElementById('inputMessage').value;
 
         $.ajax({
             url:"MailHandler.php",    //the page containing php script
             type: "POST", 
             data: {
-                inputSubject: subject, 
-                name: name, 
-                email: email, 
-                message: message
+                inputSubject: inputSubject, 
+                inputName: inputName, 
+                inputEmail: inputEmail, 
+                inputMessage: inputMessage
             },   //request type,
             success: function(response)
             {
