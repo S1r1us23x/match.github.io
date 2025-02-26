@@ -5,55 +5,60 @@
             "img": "img/team/LennyGomez.png",
             "name": "Lenny Yudith",
             "lastName": "Gómez Portilla",
-            "phone": "+57 300 000 0000",
-            "website": "https://matchalianzas.com",
+            "phone": "+57 311 837 7918",
+            "website": "www.matchalianzas.com",
             "title": "Cofundadora",
-            "email": "juan.perez@example.com"
+            "email": "lenny.gomez@matchalianzas.com"
         },
         "C70039": {
-            "id": "1",
-            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
-            "name": "Lenny Yudith Gómez Portilla",
-            "phone": "+57 311 8377918",
-            "website": "https://matchalianzas.com",
+            "id": "2",
+            "img": "img/team/DeviRojas.png",
+            "name": "Devi Milena",
+            "lastName": "Rojas Mateus",
+            "phone": "+57 313 808 5848",
+            "website": "www.matchalianzas.com",
             "title": "Cofundadora",
-            "email": "juan.perez@example.com"
+            "email": "devi.rojas.mateus@matchalianzas.com"
         },
         "900C3F": {
-            "id": "2",
-            "img": "https://matchalianzas.com/img/team/DeviRojas.png",
-            "name": "Devi Milena Rojas Mateus",
-            "phone": "+57 313 8085848",
-            "website": "https://matchalianzas.com",
+            "id": "3",
+            "img": "img/team/AndreaTibaduiza.png",
+            "name": "Andrea Carolina",
+            "lastName": "Tibaduiza Rodriguez",
+            "phone": "+57 311 670 6171",
+            "website": "www.matchalianzas.com",
             "title": "Cofundadora",
-            "email": "juan.perez@example.com"
+            "email": "andrea.tibaduiza@matchalianzas.com"
         },
         "581845": {
-           "id": "3",
-            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
-            "name": "Lenny Yudith Gómez Portilla",
-            "phone": "+57 300 000 0000",
-            "website": "https://matchalianzas.com",
+            "id": "4",
+            "img": "img/team/MariaMoreno.png",
+            "name": "María Angélica",
+            "lastName": "Moreno Franco",
+            "phone": "+57 311 290 1798",
+            "website": "www.matchalianzas.com",
             "title": "Cofundadora",
-            "email": "juan.perez@example.com"
+            "email": "maria.moreno@matchalianzas.com"
         },
         "4A235A": {
-            "id": "4",
-            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
-            "name": "Lenny Yudith Gómez Portilla",
-            "phone": "+57 300 000 0000",
-            "website": "https://matchalianzas.com",
-            "title": "Cofundadora",
-            "email": "juan.perez@example.com"
+            "id": "5",
+            "img": "img/team/MaritzaGomez.png",
+            "name": "Maritza Pilar",
+            "lastName": "Gómez Plazas",
+            "phone": "+57 311 890 1981",
+            "website": "www.matchalianzas.com",
+            "title": "Asociada",
+            "email": "maritza.gomez@matchalianzas.com"
         },
         "1C2833": {
-            "id": "5",
-            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
-            "name": "Lenny Yudith Gómez Portilla",
-            "phone": "+57 300 000 0000",
-            "website": "https://matchalianzas.com",
-            "title": "Cofundadora",
-            "email": "juan.perez@example.com"
+            "id": "6",
+            "img": "img/team/DanielaAcevedo.png",
+            "name": "Laura Daniela",
+            "lastName": "Acevedo Urrego",
+            "phone": "+57 311 581 1509",
+            "website": "www.matchalianzas.com",
+            "title": "Asociada",
+            "email": "daniela.acevedo@matchalianzas.com"
         }
     }
 }

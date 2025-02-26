@@ -142,6 +142,10 @@ h1 {
     margin: 20px 0;
 }
 
+.icon {
+    padding-right: 15px;
+}	
+
 /* Animación de carga */
 @keyframes pulse {
     0% { opacity: 0.6; }
@@ -157,5 +161,223 @@ h1 {
 @media (max-width: 768px) {
     .contacts-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-img {
+        width: 120px;
+        height: 200px;
+        margin-top: 90%;
+        margin-left: 0%;
+    }
+    .contact-name {
+        margin-top: -40%;
+        font-size: 28px;
+        padding: 0px;
+    }
+    .contact-lastName {
+        margin-top: -30%;
+        font-size: 28px;
+        padding: 0px;
+    }
+    .contact-title {
+        margin-top: -20%;
+        font-size: 20px;
+        margin-right: 0%; 
+    }
+    .contact-details {
+        padding: 55px;
+    }
+    .contact-buttons {
+        margin-right: -50%;
+        margin-top: -5%;
+    }
+    .icon {
+        padding-right: 0px; 
+    }
+    .contact-data {
+        margin-left: -10%;
+        margin-top: 10%;
+    }
+    .contact-header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Banners/LogoMatchMovilCard.png);
+        background-color: #13292e;
+    }
+}
+@media (max-width: 375px) {
+    .contact-img {
+        width: 120px;
+        height: 200px;
+        margin-top: 100%;
+        margin-left: 0%;
+    }
+    .contact-name {
+        margin-top: -30%;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .contact-lastName {
+        margin-top: -24%;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .contact-title {
+        margin-top: -15%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .contact-details {
+        padding: 50px;
+    }
+    .contact-buttons {
+        margin-right: -35%;
+        margin-top: -10%;
+    }
+    .icon {
+        padding-right: 0px; 
+    }
+    .contact-data {
+        margin-left: -15%;
+        margin-top: 10%;
+        font-size: 15px;
+    }
+    .contact-header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Banners/LogoMatchMovilCard.png);
+        background-color: #13292e;
+    }
+    .download-btn{
+        margin-top: -10%;
+    }
+}
+@media (max-width: 414px) {
+    .contact-img {
+        width: 120px;
+        height: 200px;
+        margin-top: 90%;
+        margin-left: 0%;
+    }
+    .contact-name {
+        margin-top: -35%;
+        font-size: 25px;
+        padding: 0px;
+    }
+    .contact-lastName {
+        margin-top: -27%;
+        font-size: 25px;
+        padding: 0px;
+    }
+    .contact-title {
+        margin-top: -18%;
+        font-size: 16px;
+        margin-right: 0%;
+    }
+    .contact-details {
+        padding: 55px;
+    }
+    .contact-buttons {
+        margin-right: -45%;
+        margin-top: -10%;
+    }
+    .icon {
+        padding-right: 0px; 
+    }
+    .contact-data {
+        margin-left: -10%;
+        margin-top: 10%;
+    }
+    .contact-header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Banners/LogoMatchMovilCard.png);
+        background-color: #13292e;
+    }
+}
+@media (max-width: 390px) {
+    .contact-img {
+        width: 120px;
+        height: 200px;
+        margin-top: 95%;
+        margin-left: 0%;
+    }
+    .contact-name {
+        margin-top: -30%;
+        font-size: 23px;
+        padding: 0px;
+    }
+    .contact-lastName {
+        margin-top: -24%;
+        font-size: 23px;
+        padding: 0px;
+    }
+    .contact-title {
+        margin-top: -15%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .contact-details {
+        padding: 50px;
+    }
+    .contact-buttons {
+        margin-right: -35%;
+        margin-top: -10%;
+    }
+    .icon {
+        padding-right: 0px; 
+    }
+    .contact-data {
+        margin-left: -15%;
+        margin-top: 10%;
+        font-size: 15px;
+    }
+    .contact-header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Banners/LogoMatchMovilCard.png);
+        background-color: #13292e;
+    }
+    .download-btn{
+        margin-top: -10%;
+    }
+}
+@media (max-width: 360px) {
+    .contact-img {
+        width: 120px;
+        height: 200px;
+        margin-top: 105%;
+        margin-left: 0%;
+    }
+    .contact-name {
+        margin-top: -30%;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .contact-lastName {
+        margin-top: -24%;
+        font-size: 20px;
+        padding: 0px;
+    }
+    .contact-title {
+        margin-top: -15%;
+        font-size: 15px;
+        margin-right: 0%;
+    }
+    .contact-details {
+        padding: 50px;
+    }
+    .contact-buttons {
+        margin-right: -35%;
+        margin-top: -10%;
+    }
+    .icon {
+        padding-right: 0px; 
+    }
+    .contact-data {
+        margin-left: -15%;
+        margin-top: 10%;
+        font-size: 15px;
+    }
+    .contact-header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/Banners/LogoMatchMovilCard.png);
+        background-color: #13292e;
+    }
+    .download-btn{
+        margin-top: -10%;
     }
 }

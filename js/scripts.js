@@ -1,7 +1,6 @@
 const API_URL = 'generate_vcard.php';
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Obtener el parámetro de la URL
     const urlParams = new URLSearchParams(window.location.search);
     const hexId = urlParams.get('id');
 
@@ -12,13 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
             const profiles = data.profiles;
             const profileContainer = document.getElementById('contactsContainer');
 
-            // Verificar si el color hexadecimal existe en el JSON
             if (profiles[hexId]) {
                 const profile = profiles[hexId];
                 const card = loadContacts(profile);
-                profileContainer.appendChild(card);
             } else {
-                // Si no existe, mostrar un mensaje de error
                 profileContainer.innerHTML = '<p>Perfil no encontrado</p>';
             }
         })
@@ -40,32 +36,24 @@ function loadContacts(profile) {
 
 // Función para crear una tarjeta de contacto a partir del template
 function createContactCard(contact) {
-    // Clonar el template
     const template = document.getElementById('contact-template');
     const card = document.importNode(template.content, true);
     
-    // Configurar los datos del contacto en la tarjeta
     const cardElement = card.querySelector('.contact-card');
     cardElement.setAttribute('data-id', contact.id);
     
-    // Imagen
     const img = card.querySelector('.contact-img');
     img.src = contact.img || 'images/default.jpg';
     img.alt = contact.name + ' ' + contact.lastName;
     
-    // Nombre y título
     card.querySelector('.contact-name').textContent = contact.name;
     card.querySelector('.contact-lastName') .textContent = contact.lastName;
     card.querySelector('.contact-title').textContent = contact.title;
-    
-    // Información de contacto
-    //card.querySelector('.organization span').textContent = contact.organization;
+
     card.querySelector('.phone span').textContent = contact.phone;
     card.querySelector('.email span').textContent = contact.email;
     card.querySelector('.website span').textContent = contact.website;
-    //card.querySelector('.address span').textContent = contact.address;
     
-    // Agregar la tarjeta al contenedor
     document.getElementById('contactsContainer').appendChild(card);
 }
 
@@ -95,4 +83,38 @@ function setupDownloadButtons() {
             }, 2000);
         }, 1000);
     });
+}
+
+// Función para compartir la URL de la página
+function shareUrl() {
+    const url = window.location.href;
+
+    if (navigator.share) {
+        // Si el navegador soporta la API de compartir
+        navigator.share({
+            title: "Match Alianzas",
+            url: url
+        })
+        .then(() => console.log('URL compartida con éxito'))
+        .catch((error) => console.error('Error al compartir:', error));
+    } else {
+        // Si el navegador no soporta la API de compartir, copia la URL al portapapeles
+        navigator.clipboard.writeText(url)
+            .then(() => alert('URL copiada al portapapeles: ' + url))
+            .catch((error) => console.error('Error al copiar la URL:', error));
+    }
+}
+
+// Función para enviar un correo electrónico
+function sendMailto() {
+    const emailParagraph = document.querySelector('.contact-info.email');
+    const email = emailParagraph.querySelector('span').textContent;
+    window.location.href = "mailto:" + email;;
+}
+
+// Función para llamar al número de teléfono
+function callto() {
+    const phoneParagraph = document.querySelector('.contact-info.phone');
+    const phone = phoneParagraph.querySelector('span').textContent;
+    window.location.href = "tel:" + phone;;
 }

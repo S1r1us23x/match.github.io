@@ -1,8 +1,8 @@
 <?php
-// Archivo: generate_vcard.php
-// Este archivo maneja la generación de vCards para contactos predefinidos
-
-// Permite solicitudes desde el origen de tu sitio (cambia esto según tu dominio)
+/*  Archivo: generate_vcard.php
+    Este archivo maneja la generación de vCards para contactos predefinidos
+    Permite solicitudes desde el origen de tu sitio (cambia esto según tu dominio)
+*/
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
@@ -60,70 +60,70 @@ function generateVCard($name, $lastname, $organization, $title, $phone, $email, 
 function getContacts() {
     return [
         1 => [
-            'name' => 'Juan',
-            'lastname' => 'Pérez',
-            'organization' => 'Empresa ABC',
-            'title' => 'Director General',
-            'phone' => '+34612345678',
-            'email' => 'juan.perez@empresaabc.com',
-            'website' => 'www.empresaabc.com',
-            'address' => 'Calle Principal 123, Madrid, España',
-            'photo' => 'images/juan.jpg' 
+            'name' => 'Lenny Yudith',
+            'lastname' => 'Gómez Portilla',
+            'organization' => 'Match Alianzas',
+            'title' => 'Cofundadora',
+            'phone' => '+57 311 837 7918',
+            'email' => 'lenny.gomez@matchalianzas.com',
+            'website' => 'www.matchalianzas.com',
+            'address' => '',
+            'photo' => 'https://matchalianzas.com/img/team/LennyGomez.png' 
         ],
         2 => [
-            'name' => 'Ana',
-            'lastname' => 'García',
-            'organization' => 'Consultora XYZ',
-            'title' => 'Consultora Senior',
-            'phone' => '+34623456789',
+            'name' => 'Devi Milena',
+            'lastname' => 'Rojas Mateus',
+            'organization' => 'Match Alianzas',
+            'title' => 'Cofundadora',
+            'phone' => '+57 313 808 5848',
             'email' => 'ana.garcia@consultoraxyz.com',
-            'website' => 'www.consultoraxyz.com',
-            'address' => 'Av. Central 456, Barcelona, España',
-            'photo' => 'images/ana.jpg'
+            'website' => 'www.matchalianzas.com',
+            'address' => '',
+            'photo' => 'https://matchalianzas.com/img/team/DeviRojas.png'
         ],
         3 => [
-            'name' => 'Carlos',
-            'lastname' => 'Rodríguez',
-            'organization' => 'Tech Solutions',
-            'title' => 'Desarrollador Web',
-            'phone' => '+34634567890',
-            'email' => 'carlos.rodriguez@techsolutions.com',
-            'website' => 'www.techsolutions.com',
-            'address' => 'Plaza Mayor 78, Valencia, España',
-            'photo' => 'images/carlos.jpg'
+            'name' => 'Andrea Carolina',
+            'lastname' => 'Tibaduiza Rodriguez',
+            'organization' => 'Match Alianzas',
+            'title' => 'Cofundadora',
+            'phone' => '+57 311 670 6171',
+            'email' => 'andrea.tibaduiza@matchalianzas.com',
+            'website' => 'www.matchalianzas.com',
+            'address' => '',
+            'photo' => 'https://matchalianzas.com/img/team/AndreaTibaduiza.png'
         ],
         4 => [
-            'name' => 'María',
-            'lastname' => 'López',
-            'organization' => 'Marketing Digital',
-            'title' => 'Social Media Manager',
-            'phone' => '+34645678901',
-            'email' => 'maria.lopez@marketingdigital.com',
-            'website' => 'www.marketingdigital.com',
-            'address' => 'Calle Nueva 90, Sevilla, España',
-            'photo' => 'images/maria.jpg'
+            'name' => 'María Angélica',
+            'lastname' => 'Moreno Franco',
+            'organization' => 'Match Alianzas',
+            'title' => 'Cofundadora',
+            'phone' => '+57 311 290 1798',
+            'email' => 'maria.moreno@matchalianzas.com',
+            'website' => 'www.matchalianzas.com',
+            'address' => '',
+            'photo' => 'https://matchalianzas.com/img/team/MariaMoreno.png'
         ],
         5 => [
-            'name' => 'Javier',
-            'lastname' => 'Martínez',
-            'organization' => 'Legal Advisors',
-            'title' => 'Abogado',
-            'phone' => '+34656789012',
-            'email' => 'javier.martinez@legaladvisors.com',
-            'website' => 'www.legaladvisors.com',
-            'address' => 'Gran Vía 345, Bilbao, España',
-            'photo' => 'images/javier.jpg'
+            'name' => 'Maritza Pilar',
+            'lastname' => 'Gómez Plazas',
+            'organization' => 'Match Alianzas',
+            'title' => 'Asociada',
+            'phone' => '+57 311 890 1981',
+            'email' => 'maritza.gomez@matchalianzas.com',
+            'website' => 'www.matchalianzas.com',
+            'address' => '',
+            'photo' => 'https://matchalianzas.com/img/team/MaritzaGomez.png'
         ],
         6 => [
-            'name' => 'Laura',
-            'lastname' => 'Fernández',
-            'organization' => 'Diseño Creativo',
-            'title' => 'Diseñadora Gráfica',
-            'phone' => '+34667890123',
-            'email' => 'laura.fernandez@disenocreativo.com',
-            'website' => 'www.disenocreativo.com',
-            'address' => 'Paseo del Arte 567, Málaga, España',
-            'photo' => 'images/laura.jpg'
+            'name' => 'Laura Daniela',
+            'lastname' => 'Acevedo Urrego',
+            'organization' => 'Match Alianzas',
+            'title' => 'Asociada',
+            'phone' => '+57 311 581 1509',
+            'email' => 'daniela.acevedo@matchalianzas.com',
+            'website' => 'www.matchalianzas.com',
+            'address' => '',
+            'photo' => 'https://matchalianzas.com/img/team/DanielaAcevedo.png'
         ]
     ];
 }

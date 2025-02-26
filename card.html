@@ -37,8 +37,8 @@
             </div>
             <div class="contact-details">
                 <div class="contact-buttons">
-                    <a href="" id="linkLlamada"> <button type="button" class="button"><i class="fas fa-phone-alt" style="padding-right: 15px;"></i>    Llamar</button></a>
-                    <button type="button" class="button"><i class="fas fa-envelope" style="padding-right: 15px;"></i>     Escribir</button>
+                    <button type="button" class="button" onclick="callto()"><i class="fas fa-phone-alt icon"></i>    Llamar</button>
+                    <button type="button" class="button" onclick="sendMailto()"><i class="fas fa-envelope icon"></i>     Escribir</button>
                 </div>
                 <div class="contact-data">
                     <p class="contact-info phone"><i class="fas fa-phone"></i> <span></span></p>
@@ -54,26 +54,5 @@
     <!-- Script de jQuery (desde CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        function shareUrl() {
-            const url = window.location.href; // Obtiene la URL actual de la página
-            const title = document.title; // Obtiene el título de la página
-
-            if (navigator.share) {
-                // Si el navegador soporta la API de compartir
-                navigator.share({
-                    title: title,
-                    url: url
-                })
-                .then(() => console.log('URL compartida con éxito'))
-                .catch((error) => console.error('Error al compartir:', error));
-            } else {
-                // Si el navegador no soporta la API de compartir, copia la URL al portapapeles
-                navigator.clipboard.writeText(url)
-                    .then(() => alert('URL copiada al portapapeles: ' + url))
-                    .catch((error) => console.error('Error al copiar la URL:', error));
-            }
-        }
-    </script>
 </body>
 </html>
