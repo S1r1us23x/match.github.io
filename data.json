@@ -1,0 +1,59 @@
+{
+    "profiles": {
+        "FF5733": {
+            "id": "1",
+            "img": "img/team/LennyGomez.png",
+            "name": "Lenny Yudith",
+            "lastName": "Gómez Portilla",
+            "phone": "+57 300 000 0000",
+            "website": "https://matchalianzas.com",
+            "title": "Cofundadora",
+            "email": "juan.perez@example.com"
+        },
+        "C70039": {
+            "id": "1",
+            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
+            "name": "Lenny Yudith Gómez Portilla",
+            "phone": "+57 311 8377918",
+            "website": "https://matchalianzas.com",
+            "title": "Cofundadora",
+            "email": "juan.perez@example.com"
+        },
+        "900C3F": {
+            "id": "2",
+            "img": "https://matchalianzas.com/img/team/DeviRojas.png",
+            "name": "Devi Milena Rojas Mateus",
+            "phone": "+57 313 8085848",
+            "website": "https://matchalianzas.com",
+            "title": "Cofundadora",
+            "email": "juan.perez@example.com"
+        },
+        "581845": {
+           "id": "3",
+            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
+            "name": "Lenny Yudith Gómez Portilla",
+            "phone": "+57 300 000 0000",
+            "website": "https://matchalianzas.com",
+            "title": "Cofundadora",
+            "email": "juan.perez@example.com"
+        },
+        "4A235A": {
+            "id": "4",
+            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
+            "name": "Lenny Yudith Gómez Portilla",
+            "phone": "+57 300 000 0000",
+            "website": "https://matchalianzas.com",
+            "title": "Cofundadora",
+            "email": "juan.perez@example.com"
+        },
+        "1C2833": {
+            "id": "5",
+            "img": "https://matchalianzas.com/img/team/LennyGomez.png",
+            "name": "Lenny Yudith Gómez Portilla",
+            "phone": "+57 300 000 0000",
+            "website": "https://matchalianzas.com",
+            "title": "Cofundadora",
+            "email": "juan.perez@example.com"
+        }
+    }
+}
