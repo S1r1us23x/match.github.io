@@ -129,7 +129,24 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>  
         
-        
+        <!-- Video Modal Start -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">Match Alianzas 2025</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <video id="video2025Player" class="w-100" autoplay muted loop controls>
+                            <source src="img/Galerias/EncuentrosEmpresairales/Video2025.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal End -->
 
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -152,6 +169,22 @@
                 $("#f-team").load("f-team.html");
                 $("#f-footer").load("f-footer.html");
                 $("#f-copyright").load("f-copyright.html");
+            });
+
+            $(window).on('load', function() {
+                var videoModalElement = document.getElementById('videoModal');
+                var videoModal = new bootstrap.Modal(videoModalElement);
+                var video = document.getElementById('video2025Player');
+                
+                videoModal.show();
+
+                videoModalElement.addEventListener('shown.bs.modal', function () {
+                    video.play();
+                });
+
+                videoModalElement.addEventListener('hidden.bs.modal', function () {
+                    video.pause();
+                });
             });
          </script>
 
